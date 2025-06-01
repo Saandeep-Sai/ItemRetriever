@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { verifyOtpAction } from '@/app/auth/authAction';
+import { verifyOtpAction } from '@/app/actions/authActions';
 
 export async function POST(req: Request) {
   const { email, otp } = await req.json();
